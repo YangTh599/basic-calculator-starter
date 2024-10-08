@@ -3,6 +3,7 @@
 # Basic Calculator
 
 def getNumber(message):
+    # (String) Message: string text prompted for the input message.
     number = 0
     while True:
         try:
@@ -23,32 +24,32 @@ Choose a math operation to perform:
     3. Multiplication (*)
     4. Division (/)""")
 
-operation = 0
-
+# Gets wanted operation
 while True:
     operation = int(getNumber("Enter your choice (1-4): "))
     if operation >=1 and operation <=4:
         break
     else:
-        print("Invalid input.")
+        print("Invalid input. Please enter the integers 1-4 for wanted operation.")
 
+#User inputs numbers
 num1 = getNumber("Please enter your first number: ")
 num2 = getNumber("Please enter your second number: ")
 
-if operation == 1:
+if operation == 1: # Addition
     answer = num1 + num2
     print(f'{num1} plus {num2} equals: {answer}')
 
-elif operation == 2:
+elif operation == 2: # Subtraction
     answer = num1 - num2
     print(f'{num1} minus {num2} equals: {answer}')
 
-elif operation ==3:
+elif operation == 3: # Multiplication
     answer = num1*num2
     print(f'{num1} times {num2} equals: {answer}')
-    
-elif operation ==4:
-    if num2 == 0:
+
+elif operation == 4: # Division
+    if num2 == 0: #Checks if user is dividing by 0
         print("ERROR: Cannot divide by zero.")
     else:
         answer = num1/num2
