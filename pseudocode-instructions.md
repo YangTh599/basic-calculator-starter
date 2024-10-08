@@ -20,10 +20,13 @@
 
 ### Team Pseudocode for Basic Calculator
 
-#### Team Members: (Add names of team members here)
+#### Team Members: (Qwynn Darnell, Thayer Yang)
 
-- Step 1
-- Step 2
-- Step 3
-- Add additional steps as needed
+- Greet the user by introducing the script as a Basic Calculator.
+- Display the various math operations in a numbered list.
+- Ask the user to select a math operation by entering its corresponding number.
+- Prompt the user to enter 2 numbers to two different variables.
+- Calculate the answer using the two numbers in the chosen math operation.
+- Display the answer and the math with it.
+
 
