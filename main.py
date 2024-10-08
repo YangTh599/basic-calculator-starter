@@ -38,12 +38,15 @@ num2 = getNumber("Please enter your second number: ")
 if operation == 1:
     answer = num1 + num2
     print(f'{num1} plus {num2} equals: {answer}')
+
 elif operation == 2:
     answer = num1 - num2
     print(f'{num1} minus {num2} equals: {answer}')
+
 elif operation ==3:
     answer = num1*num2
     print(f'{num1} times {num2} equals: {answer}')
+    
 elif operation ==4:
     if num2 == 0:
         print("ERROR: Cannot divide by zero.")
